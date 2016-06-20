@@ -1,8 +1,8 @@
 # Site settings
-title: wwwtf.berlin – Berlin, September 2015
-description: "wwwtf.berlin is a collection of fine events around the web, happening in Berlin in September 2015"
+title: Copenhagen Tech Week 2016
+description: "Copenhagen Tech Week 2016 is a collection of fine events around the web, happening in Copenhagen in September 2016"
 baseurl: ""
-url: "http://wwwtf.berlin"
+url: "http://copenhagentechweek.dk"
 exclude:
   - README.md
 # Build settings

@@ -1,4 +1,4 @@
-wwwtf.berlin
+Copenhagen Tech Week 2016
 =============
 
 The schedule page for wwwtf.berlin 2015
