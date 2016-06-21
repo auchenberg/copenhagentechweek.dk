@@ -1,10 +1,14 @@
 # Site settings
 title: Copenhagen Tech Week 2016
 description: "Copenhagen Tech Week 2016 is a collection of fine events around the web, happening in Copenhagen in September 2016"
+
 baseurl: ""
 url: "http://copenhagentechweek.dk"
 exclude:
   - README.md
+
 # Build settings
 markdown: kramdown
 permalink: pretty
+sass:
+    sass_dir: _sass
