@@ -1,9 +1,7 @@
 Copenhagen Tech Week 2016
 =============
 
-The schedule page for wwwtf.berlin 2015
-
-SVG Berlin Skyline by wasat on http://www.openclipart.org/detail/27938
+The schedule page for Copenhagen Tech Week 2016
 
 Setup
 =====
@@ -11,8 +9,8 @@ Setup
 The site uses [jekyll](http://jekyllrb.com), to run the site do the following in your
 terminal:
 
-* `git clone git@github.com:janl/wwwtf.berlin.git`
-* `cd wwwtf.berlin`
+* `git clone git@github.com:auchenberg/copenhagentechweek.dk`
+* `cd copenhagentechweek.dk`
 * `gem install bundler`
 * `bundle install`
 * `bundle exec jekyll serve --watch`
@@ -36,4 +34,4 @@ The following points are necessary:
 * time: "hours:minutesam/pm"
 * href: "link to the page of the event host"
 
-The href is crucial as long as the detail pages on wwwtf.berlin aren't finished.
+The href is crucial as long as the detail pages aren't finished.
