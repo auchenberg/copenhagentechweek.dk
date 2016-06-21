@@ -1,12 +1,11 @@
 ---
 layout: default
-title: wwwtf.berlin Add your event
-intro: WhatTheFest is <strong>your</strong> festival – a full week of events for and by the Web Tech community in Berlin.
+title: Add your event
+intro: Copenhagen Teck Week - a full month of events in Copenhagen
 class: pull-up-content--text
 ---
 
 # Add your event
-
 
 Everyone can add events to our schedule. Yes, you can, too. Even your company. We will promote your event, just as we promote all the others.
 
@@ -16,7 +15,7 @@ We welcome workshops, social events, charitable activities, hackathons, doc spri
 
 There are two ways to get your event on our list.
 
-You can [create an issue](https://github.com/janl/wwwtf.berlin/issues) with the details of your event. Or, if you have experience doing so, you can [submit a pull request](https://github.com/janl/wwwtf.berlin#create-an-event).
+You can [create an issue](https://github.com/auchenberg/copenhagentechweek.dk/issues) with the details of your event. Or, if you have experience doing so, you can [submit a pull request](https://github.com/auchenberg/copenhagentechweek.dk#create-an-event).
 
 Just remember to provide all important details, including the **date** and **times**, **location**, and a **link** to your event website. Also remember to include the **names of all organizers**, **cost** (if applicable), and the **maximum number of registrants** in the comments.
 
