@@ -24,7 +24,7 @@ class: pull-up-content--list
        -->{% endif %}<!--
        --><div class="eventlist-element__main">
             <span class="eventlist-element__title">
-              <a class="eventlist-element__link" href="{{ post.href }}">{{ post.title }}</a>
+              <a class="eventlist-element__link" href="{{ post.href }}">{{ post.title }} ({% if post.free == 'true' %} 'FREE: {% endif %}{{ post.type }})</a>
             </span>
             <a class="eventlist-element__expand" href="#{{ post.id }}"><i class="eventlist-element__plus icon icon-plus"></i></a>
             <a class="eventlist-element__collapse" href="#"><i class="eventlist-element__plus icon icon-plus"></i></a>
@@ -32,6 +32,7 @@ class: pull-up-content--list
             <div class="eventlist-element__more">
               <span class="eventlist-element__time"><span class="eventlist-element__label">Time:</span> {{ post.time }}</span>
               <span class="eventlist-element__venue"><span class="eventlist-element__label">Venue: </span>{{ post.venue }}</span>
+              <span class="eventlist-element__venue"><span class="eventlist-element__label">Cost: </span>{% if post.free == 'true' %} 'FREE{% endif %}</span>
               <span class="eventlist-element__ticket"><span class="eventlist-element__label">Ticket:</span> {{ post.ticket }}</span>
             </div>
         </div>
