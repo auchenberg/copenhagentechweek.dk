@@ -26,6 +26,7 @@
 .btn {
   padding: 15px 25px;
   font-size: 20px;
+  border-radius: 0;
 }
      
 .btn-primary {
@@ -40,6 +41,7 @@ body {
   color: #000;
   height: 100%;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -141,6 +143,7 @@ a {
   padding: 50px 0;
   background: #eeeeee;
   font-size: 14px;
+  font-family: "CalibreBlack", sans-serif;
 
   .row {
     display: flex;
@@ -166,7 +169,10 @@ a {
     a {
       color: #000;
     }
+  }
 
+  p {
+    margin: 0;
   }
 
 }
@@ -295,8 +301,82 @@ section {
 .events {
   padding-top: 100px;
 }
+.about {
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .mono {
+    p {
+      text-decoration: underline;
+      font-size: 16px;
+    }
+  }
+
+}
+
+.co-creators {
+
+  .logos {
+    padding: 100px 0;
+  }
+
+}
 
 .align-bottom {
     display: flex;
     align-items: flex-end;  
+}
+
+.flex {
+  display: flex;
+}
+
+
+.newsletter {
+
+  input {
+    height: 50px;
+    width: 100%;
+    padding: 0 5px 20px 0;
+    margin: 40px 0;
+
+    font-size: 24px;
+
+    border: 0;
+    border-bottom: 1px solid #000;
+  }
+
+}
+
+.contact {
+
+  .social {
+    display: block;
+    margin-top: 50px;
+    font-size: 20px;
+    
+    a {
+      margin-right: 20px;
+    }
+
+    img {
+      width: 30px;
+      margin-right: 5px;
+    }
+  }
+}
+
+
+.font-calibre {
+    font-family: "Calibre", sans-serif;
+}
+
+.font-calibre-black {
+    font-family: "CalibreBlack", sans-serif;
 }
