@@ -1,22 +1,22 @@
 @font-face {
     font-family: Calibre;
     src:
-        url('CalibreWeb-Regular.woff2') format('woff2'),
-        url('CalibreWeb-Regular.woff') format('woff');
+        url('../fonts/CalibreWeb-Regular.woff2') format('woff2'),
+        url('../fonts/CalibreWeb-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: CalibreBold;
     src:
-        url('CalibreWeb-Bold.woff2') format('woff2'),
-        url('CalibreWeb-Bold.woff') format('woff');
+        url('../fonts/CalibreWeb-Bold.woff2') format('woff2'),
+        url('../fonts/CalibreWeb-Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: CalibreBlack;
     src:
-        url('CalibreWeb-Black.woff2') format('woff2'),
-        url('CalibreWeb-Black.woff') format('woff');
+        url('../fonts/CalibreWeb-Black.woff2') format('woff2'),
+        url('../fonts/CalibreWeb-Black.woff') format('woff');
 }
 
 .mono {
