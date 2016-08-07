@@ -1,5 +1,6 @@
 
 .about {
+  position: relative;
 
   h2 {
     margin-bottom: 50px;
@@ -9,11 +10,59 @@
     font-size: 18px;
   }
 
-  .mono {
+  .links {
     p {
       text-decoration: underline;
-      font-size: 16px;
+      font-size: 14px;
     }
   }
+
+  .slogan {
+    font-size: 26px;
+    position: absolute;
+    left: 50%;
+    margin-left: -260px;
+    top: 170px;
+  }
+
+  .arrow {
+
+    position: absolute;
+    top: 644px;
+    left: -48px;
+
+    height: 280px;
+    width: 280px;
+
+    div {
+      height: 50px;
+      width: 100px;
+      background: rgba(0, 67, 255, 0.9);
+      position: absolute;
+    }
+
+    .arrow-1 {
+      top: 100px;
+      left: 0px;
+      transform: rotate(30deg);
+      width: 300px;
+    }
+
+    .arrow-2 {
+      width: 145px;
+      top: 185px;
+      left: 165px;
+      transform: rotate(-18deg);
+    }
+
+    .arrow-3 {
+      width: 130px;
+      top: 127px;
+      left: 202px;
+      transform: rotate(-108deg);
+    }    
+  }
+
+
 
 }
