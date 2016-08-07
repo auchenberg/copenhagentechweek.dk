@@ -2,154 +2,93 @@ $element-href-width: 3rem;
 $element-date-width: 4.5rem;
 
 .eventlist {
-  list-style: none;
-  display: block;
-  margin: 0;
-  padding: 0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-}
-
-.eventlist-element {
-  margin: 0;
-  padding: 0;
   position: relative;
-  background-color: $color_eventlist;
-}
+  margin: 100px 0 50px 0;
+  padding: 0;
 
-.eventlist-element a {
-  color: white;
+ li {
+   border-top: 1px solid #000;
+   font-size: 16px;
+   list-style: none;
+   padding: 20px 0;
+   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    color: white;
-  }
-}
+   &:last-child {
+     border-bottom: 1px solid #000;
+   }
+   
+   .label {
+     display: block;
+     color: #000;
+     text-align: left;
+     padding: 0 0 2px 0;
+     font-style: italic;
+   }
 
-.eventlist-element__link {
-  color: white;
+   .header {
+     padding: 0 0 20px 0;
 
-  &::after {
-    content: "→";
-    font-family: sans-serif;
-    display: inline-block;
-    font-size: .8em;
-    margin-left: .5em;
-    opacity: .15;
-    -webkit-transition: transform .1s;
-    -moz-transition: transform .1s;
-    transition: transform .1s;
-  }
-
-  &:hover,
-  &:focus {
-    color: white;
-
-    &::after {
-      opacity: 1;
-      -webkit-transform: translateX(.25em);
-      -moz-transform: translateX(.25em);
-      transform: translateX(.25em);
+     div, span {
+      font-size: 12px;
     }
-  }
+   }
+
+   .buy-tickets {
+     font-size: 12px;
+     text-decoration: underline;
+     padding-top: 60px;
+     
+     a {
+       color: #000;
+     }
+   }
+
+ }
+
 }
 
-.eventlist-element__more {
-  font-size: .85em;
-  opacity: .75;
-}
-
-.eventlist-element__content {
-  padding: .75rem;
-  padding-right: (.75rem + $element-href-width);
-  color: white;
-  position: relative;
-  padding-left: (.75rem + $element-date-width);
-}
-
-.eventlist-element__more {
-  display: none;
-}
-
-.eventlist-element__content:target,
-.eventlist-element__content.open {
-  background: rgba(255,255,255,.1);
-  .eventlist-element__more {
-    display: block;
-  }
-}
-
-.eventlist-element__date {
-  width: $element-date-width;
+.row-highlight {
   position: absolute;
-  top: .75rem;
-  left: .75rem;
+  top: -15px;
+  bottom: -15px;
+  right: -15px;
+  width: 25%;
+  z-index: -1;
+
+  background: #f8eee4;
 }
 
 .eventlist-element__title {
-  display: inline-block;
-  padding-right: .25em;
+  font-size: 40px;
   font-weight: bold;
-}
+  margin: 0;
 
-.eventlist-element__time {
-  opacity: .75;
-}
-
-.eventlist-element__expand,
-.eventlist-element__collapse {
-  width: $element-href-width;
-  padding: .75rem;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  text-align: center;
-  background: rgba(0,0,0,.2);
-}
-
-.eventlist-element__collapse {
-  visibility: hidden;
-
-  .eventlist-element__content:target & {
-    visibility: visible;
+  a {
+    color: #000;
   }
 }
 
-.eventlist-element__expand {
-  visibility: visible;
+.eventlist-element__subtitle {
+  font-size: 28px;
+}
 
-  .eventlist-element__content:target & {
-    visibility: hidden;
+.eventlist-element__date-duration {
+  font-size: 30px;
+}
+
+
+.eventlist-element__details {
+  display: none;
+}
+
+.events-join {
+  
+  p, h4 {
+    font-size: 24px;
   }
-}
 
-.eventlist-element__plus {
-  opacity: .35;
-  -webkit-transition: transform .25s;
-  -moz-transition: transform .25s;
-  transition: transform .25s;
-
-  .eventlist-element__content:target &,
-  .eventlist-element__content.open & {
-    opacity: 1;
-    -webkit-transform: rotate( (45deg + 90deg) );
-    -moz-transform: rotate( (45deg + 90deg) );
-    transform: rotate( (45deg + 90deg) );
+  h4 {
+    font-weight: bold;
+    margin: 0;
   }
-}
-
-.eventlist-element__label {
-  font-size: .8rem;
-  text-transform: uppercase;
-  opacity: .5;
-}
-
-.eventlist-element__time,
-.eventlist-element__venue,
-.eventlist-element__ticket {
-  margin-right: .75em;
 }

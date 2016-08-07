@@ -17,22 +17,3 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-.page_footer {
-  background-color: $color_main;
-  color: $color_contrast;
-  .heart {
-    @include hearticon(8px);
-  }
-}
-
-.heart-wrap {
-  display: block;
-  text-align: center;
-  overflow: hidden;
-}
-
-.intro {
-  text-align: center;
-  margin: 0 auto 2rem;
-}

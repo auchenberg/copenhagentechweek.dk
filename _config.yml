@@ -1,9 +1,9 @@
 # Site settings
-title: Copenhagen Tech Week 2016
+title: Copenhagen Tech Fest 2016
 description: "Copenhagen Tech Week 2016 is a collection of fine events around the web, happening in Copenhagen in September 2016"
 
-baseurl: "https://auchenberg.github.io/copenhagentechweek.dk/"
-url: "http://copenhagentechweek.dk"
+# baseurl: "https://auchenberg.github.io/copenhagentechweek.dk/"
+# url: "http://copenhagentechweek.dk"
 exclude:
   - README.md
 

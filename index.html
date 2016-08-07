@@ -1,62 +1,229 @@
 ---
 layout: default
-title: Copenhagen Tech Week 2016
+title: Copenhagen Tech Fest 2016
 intro: A full month of events for and by the tech community in Copenhagen. <br><br><small>We welcome you to attend, and encourage you to <a href="add-your-event">add your own event</a>.<br>Are you travelling to Copenhagen? Check out our <a href="/attendee-guide/">Attendee Guide</a>.</small>
 class: pull-up-content--list
 ---
 
-{% assign previousDate = site.date %}
+<section class="splash">
 
-<ol class="eventlist" id="eventlist">
-  {% for post in site.posts reversed %}
-    <li class="eventlist-element">
-      <div class="eventlist-element__content" id="{{ post.id }}"><!--
-      -->{% if post.date == previousDate %}
-            <time datetime="{{ post.date | date: "%Y-%m-%d" }}"class="eventlist-element__date eventlist-element--is-hidden">
-              <span class="eventlist-element__date-day">{{ post.date | date: "%d" }}</span>
-              <span class="eventlist-element__date-day-name">{{ post.date | date: "%a" }}</span>
-            </time><!--
-       -->{% else %}
-            <time datetime="{{ post.date | date: "%Y-%m-%d" }}"class="eventlist-element__date">
-              <span class="eventlist-element__date-day">{{ post.date | date: "%d" }}</span>
-              <span class="eventlist-element__date-day-name">{{ post.date | date: "%a" }}</span>
-            </time><!--
-       -->{% endif %}<!--
-       --><div class="eventlist-element__main">
-            <span class="eventlist-element__title">
-              <a class="eventlist-element__link" href="{{ post.href }}">{{ post.title }} ({% if post.free == 'true' %} 'FREE: {% endif %}{{ post.type }})</a>
-            </span>
-            <a class="eventlist-element__expand" href="#{{ post.id }}"><i class="eventlist-element__plus icon icon-plus"></i></a>
-            <a class="eventlist-element__collapse" href="#"><i class="eventlist-element__plus icon icon-plus"></i></a>
-          {% assign previousDate = post.date %}
-            <div class="eventlist-element__more">
-              <span class="eventlist-element__time"><span class="eventlist-element__label">Time:</span> {{ post.time }}</span>
-              <span class="eventlist-element__venue"><span class="eventlist-element__label">Venue: </span>{{ post.venue }}</span>
-              <span class="eventlist-element__venue"><span class="eventlist-element__label">Cost: </span>{% if post.free == 'true' %} 'FREE{% endif %}</span>
-              <span class="eventlist-element__ticket"><span class="eventlist-element__label">Ticket:</span> {{ post.ticket }}</span>
-            </div>
+  <div class="row">
+      <div class="col-md-3"></div>
+      
+      <div class="col-md-3">
+        <p>
+          Celebrating technology. <br/> 
+          All over Copenhagen. <br/>
+          All of September.<br/>
+        </p>
+        
+        <div class="social">
+          <a href="">Twitter ↗</a><br/>
+          <a href="">Facebook ↗</a><br/>
+          <a href="">Medium ↗</a>
         </div>
-      </a>
-    </li>
-  {% endfor %}
-</ol>
+      </div>
 
-<script>
-  (function() {
-    var listitems = document.getElementById( 'eventlist' ).children;
-    var gradientRgb = '0,0,0'
+      <div class="col-md-3"></div>
+  </div>
 
-    overlayGradient( listitems, gradientRgb );
+  <div class="row">
+      <div class="col-md-3"></div>
+      
+      <div class="col-md-6 event-details">
+        <img src="img/home-splash.png" />
 
-    function overlayGradient( elements, rgbvalue ) {
-      var increment = 1 / elements.length;
+        <div class="event-info">
+          <h3>Robert Scoble</h3>
+          <p>Futurist at UploadVR</p>
+          <p>15-17. sep</p>
+          <p><strong>CopenX</strong></p>
+        </div>
+      </div>
 
-      for (var i = elements.length - 1; i >= 0; i--) {
-        var bgcolor = 'rgba(' + rgbvalue + ',' + increment * i / 1.5 + ')';
-        elements[i].style.backgroundImage = '-webkit-linear-gradient(' + bgcolor + ', ' + bgcolor + ')';
-        elements[i].style.backgroundImage = 'linear-gradient(' + bgcolor + ', ' + bgcolor + ')';
-      };
-    }
-  })()
-</script>
-<!--  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+      <div class="col-md-3"></div>
+  </div>
+
+  <div class="tape tape-1"></div>
+  <div class="tape tape-2"></div>
+  <div class="tape tape-3"></div>
+  <div class="tape tape-4"></div>
+  <div class="tape tape-5"></div>
+  <div class="tape tape-6"></div>
+  <div class="tape tape-7"></div>
+  <div class="tape tape-8"></div>
+  <div class="tape tape-9"></div>
+  <div class="tape tape-10"></div>
+  <div class="tape tape-11"></div>
+  <div class="tape tape-12"></div>
+
+</section>
+
+<section class="events">
+
+  <h2>Event Calendar</h2>
+
+  <ol class="eventlist" id="eventlist">
+  <div class="row-highlight"></div> 
+    {% for post in site.posts reversed %}
+      <li class="eventlist-element">
+        <div class="eventlist-element__content" id="{{ post.id }}">
+          <div class="row header">
+
+            <div class="col-md-3">
+              <div class="label mono">When:</div>
+               <time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="eventlist-element__date mono">
+                 <span class="eventlist-element__date-day">{{ post.date | date: "%Y-%m-%d" }}</span>
+               </time>
+            </div>
+
+            <div class="col-md-3">
+              <div class="label mono">Event:</div>
+              <span class="text-highlight mono">{{ post.type }}</span>
+            </div>
+
+            <div class="col-md-3">
+              <div class="label mono">Venue:</div>
+              {{ post.venue }}
+            </div>
+
+            <div class="col-md-3">
+              <div class="label mono">Attendence:</div>
+              {% if post.free == 'true' %}
+                FREE
+              {% else %}
+                Payed event
+              {% endif %}
+            </div>
+          </div>
+          
+          <div class="row">
+
+            <div class="col-md-3">
+                <span class="eventlist-element__date-duration mono text-highlight">
+                  {{ post.date | date: "%-d %b" }}
+                </span>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="eventlist-element__title">
+                  <a class="eventlist-element__link" href="{{ post.href }}">{{ post.title }}</a>
+                </h3>
+                <h4 class="eventlist-element__subtitle">{{ post.subtitle }}</h4>
+            </div>
+
+            <div class="col-md-3">
+              <div class="buy-tickets">
+              {% unless post.free == 'true' %}
+                <a class="mono" href="{{ post.tickets }}">Buy tickets</a>
+              {% endunless %}
+              </div>
+            </div>
+
+          </div>
+
+          <div class="eventlist-element__details row">
+            <div class="col-md-3">
+               <h5>{{ post.intro }}</h5>
+            </div>
+
+            <div class="col-md-3">
+               <p>{{ post.description }}</p>
+            </div>            
+
+            <div class="col-md-6">
+               <img src="{{ post.image }}" />
+            </div>
+
+          </div>
+
+        </a>
+      </li>
+    {% endfor %}
+  </ol>
+  
+  <div class="events-join">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Join the fun!</h4>
+        <p>Host an event in Copenhagen in September. <br /><br /></p>
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-3">
+        <a href="" class="btn btn-primary">Host an event</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="about">
+  <h2>About Copenhagen Techfest</h2>
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+        <p><a href="">Become a partner</a></p>
+        <p><a href="">Host an event</a></p>
+    </div>
+
+    <div class="col-md-3">
+      <p>Fast-growing startups, novel innovations, buzzing co-working spaces, rise in investments, experienced forces and lots of talent. With big news and hectic energy in the startup community, Copenhagen is racing to become the next tech hub.</p>
+      <p>At the brand new Copenhagen TechFest, we are celebrating this. For the first time in Denmark, we are uniting the startup community, aligning events, building a stage and putting the best ideas on it. Meet the talent, see the innovations and feel the energy, when we share the latest and put the future stars on a pedestal.</p>  
+    </div>
+
+  </div>
+</section>
+
+<section class="co-creators">
+  <h2>Co-creators</h2>
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+        <h3>We have the best friends</h3>
+        <p>We have some fantastic partners, who are making this festival come alive. Give them some love - or join them!</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+      <p></p>  
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+      <a href="" class="btn btn-primary">Become a partner</a>
+    </div>
+  </div>
+
+</section>
+
+<section class="contact">
+  <h2>Contact</h2>
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-9">
+        <h3>Missing Something? </br>Then Make It!</h3>
+        <p>We welcome and support good event ideas.</p>
+        <p>Contact Festival Director Marie Gørvild at mg@cphftw.dk / +45 61709104</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+      <a href="" class="btn btn-primary">Sign up for news</a>
+    </div>
+  </div>
+
+</section>
+

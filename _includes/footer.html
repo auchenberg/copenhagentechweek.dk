@@ -1,42 +1,30 @@
-<footer class="page_footer">
-  <div class="wrap">
-    <span class="heart-wrap">View the code on <a href="https://github.com/auchenberg/copenhagentechweek.dk">GitHub</a>. Follow us on <a href="https://twitter.com/cphftw">Twitter</a>.
-      <br>
-      From the community for the community, with <span class="heart"></span></span>
+<footer class="page-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-3">
+        <a href="{{ site.baseurl }}/">
+          <img class="logo" src="img/logo.svg"/>
+        </a>
+      </div>
+
+      <div class="col-md-6">
+        <div class="slogan">
+          Celebrating technology. <br/> 
+          All over Copenhagen. <br/>
+          All of September.<br/>
+        </div>
+
+        <p><strong>Made with love by #CPHFTW, the event organizers and our co-creators.</strong></p>
+        <p>© 2016 – All rights reserved</p>
+      </div>
+      
+
+      <div class="col-md-3 top">
+        <a href="/#">Up top</a>
+      </div>
+
+    </div>
+
   </div>
 </footer>
-
-<script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'PT+Sans+Narrow:400,700:latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
-</script>
-
-<script>
-
-$( "a.eventlist-element__expand, a.eventlist-element__collapse" ).click(function(event) {
-  event.preventDefault();
-  history.pushState({}, document.title, this.href);
-  $(this).closest('.eventlist-element__content').toggleClass('open');
-});
-</script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-54554818-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
