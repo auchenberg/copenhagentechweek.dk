@@ -17,6 +17,12 @@ $element-date-width: 4.5rem;
      border-bottom: 1px solid #000;
    }
    
+   &.state-expanded {
+    .eventlist-element__details {
+      display: flex;
+    }
+   }
+   
    .label {
      display: block;
      color: #000;
@@ -31,16 +37,6 @@ $element-date-width: 4.5rem;
      div, span {
       font-size: 12px;
     }
-   }
-
-   .buy-tickets {
-     font-size: 12px;
-     text-decoration: underline;
-     padding-top: 60px;
-     
-     a {
-       color: #000;
-     }
    }
 
  }
@@ -76,11 +72,23 @@ $element-date-width: 4.5rem;
   font-size: 30px;
 }
 
-
 .eventlist-element__details {
   display: none;
+  height: 320px;
+
+  .intro {
+    h5 { 
+      font-size: 30px;
+    }
+  }
+
 }
 
+
+.eventlist-element__details__links {
+    font-size: 12px;
+    text-decoration: underline;
+}
 .events-join {
   
   p, h4 {

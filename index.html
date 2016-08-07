@@ -79,21 +79,23 @@ class: pull-up-content--list
 
             <div class="col-md-3">
               <div class="label mono">Event:</div>
-              <span class="text-highlight mono">{{ post.type }}</span>
+              <span class="text-highlight text-bold mono">{{ post.type }}</span>
             </div>
 
             <div class="col-md-3">
               <div class="label mono">Venue:</div>
-              {{ post.venue }}
+              <span class="text-bold mono">{{ post.venue }}</span>
             </div>
 
             <div class="col-md-3">
               <div class="label mono">Attendence:</div>
+              <span class="text-bold mono">
               {% if post.free == 'true' %}
                 FREE
               {% else %}
                 Payed event
               {% endif %}
+              </span>
             </div>
           </div>
           
@@ -107,32 +109,39 @@ class: pull-up-content--list
 
             <div class="col-md-6">
                 <h3 class="eventlist-element__title">
-                  <a class="eventlist-element__link" href="{{ post.href }}">{{ post.title }}</a>
+                  {{ post.title }}
                 </h3>
                 <h4 class="eventlist-element__subtitle">{{ post.subtitle }}</h4>
-            </div>
-
-            <div class="col-md-3">
-              <div class="buy-tickets">
-              {% unless post.free == 'true' %}
-                <a class="mono" href="{{ post.tickets }}">Buy tickets</a>
-              {% endunless %}
-              </div>
             </div>
 
           </div>
 
           <div class="eventlist-element__details row">
-            <div class="col-md-3">
+            <div class="col-md-3 intro">
                <h5>{{ post.intro }}</h5>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 description align-bottom">
                <p>{{ post.description }}</p>
             </div>            
 
             <div class="col-md-6">
                <img src="{{ post.image }}" />
+            </div>
+
+          </div>
+
+          <div class="row eventlist-element__details__links">
+            <div class="col-md-3 col-md-offset-6">
+              <a class="mono text-highlight" href="{{ post.url }}">Event website  &#8599;</a>
+            </div>
+
+            <div class="col-md-3">
+              <div class="buy-tickets">
+              {% unless post.free == 'true' %}
+                <a class="mono" href="{{ post.tickets }}">Buy tickets &#8599;</a>
+              {% endunless %}
+              </div>
             </div>
 
           </div>
@@ -227,3 +236,14 @@ class: pull-up-content--list
 
 </section>
 
+
+
+<script>
+
+  $(function() {
+    $('.events li').on('click', function(elmTarget) {
+      $(this).toggleClass('state-expanded')
+    })
+  })
+
+  </script>

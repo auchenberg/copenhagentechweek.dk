@@ -62,6 +62,7 @@ h3 {
 
 a {
   text-decoration: none;
+  color: #000;
   &:hover, &:focus {
     opacity: .75;
   }
@@ -69,6 +70,10 @@ a {
 
 .text-highlight {
    color: #0043ff;  
+}
+
+.text-bold {
+  font-weight: bold;
 }
 
 .page-header {
@@ -289,4 +294,9 @@ section {
 
 .events {
   padding-top: 100px;
+}
+
+.align-bottom {
+    display: flex;
+    align-items: flex-end;  
 }
