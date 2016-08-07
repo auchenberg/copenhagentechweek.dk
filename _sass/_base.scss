@@ -28,17 +28,17 @@ html {
 }
 
 body {
-  font-family: "Calibre", sans-serif;
+  @extend .font-calibre;
   font-size: 18px;
   line-height: 1.333;
   color: #000;
   height: 100%;
-  -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
-  font-family: "CalibreBlack", sans-serif;
+  @extend .font-calibre-black;
 }
 
 h2 {
@@ -84,8 +84,8 @@ section {
 }
 
 .align-bottom {
-    display: flex;
-    align-items: flex-end;  
+  display: flex;
+  align-items: flex-end;  
 }
 
 .flex {
