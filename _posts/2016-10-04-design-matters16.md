@@ -2,6 +2,7 @@
 layout: post
 title:  "Design Matters 16"
 date:   2015-09-28
+endDate:   2015-09-29
 venue: " Langelinie Pavillionen"
 ticket: "Available"
 time: "See Website for details"

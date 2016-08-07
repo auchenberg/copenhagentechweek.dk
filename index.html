@@ -97,7 +97,11 @@ class: pull-up-content--list
 
             <div class="col-md-3">
                 <span class="eventlist-element__date-duration font-mono text-highlight">
-                  {{ post.date | date: "%-d %b" }}
+                  {% if post.endDate != nil %}
+                    {{ post.date | date: "%-d" }}-{{ post.endDate | date: "%-d. %b" }}
+                  {% else %}
+                    {{ post.date | date: "%-d. %b" }}
+                  {% endif %}
                 </span>
             </div>
 
