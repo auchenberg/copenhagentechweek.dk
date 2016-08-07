@@ -6,12 +6,11 @@
 
 @import "normalize";
 @import "base";
-@import "list";
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+@import "about";
+@import "contact";
+@import "creators";
+@import "events";
+@import "header";
+@import "nav";
+@import "footer";
+@import "splash";

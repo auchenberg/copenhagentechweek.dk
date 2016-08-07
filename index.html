@@ -63,25 +63,25 @@ class: pull-up-content--list
           <div class="row header">
 
             <div class="col-md-3">
-              <div class="label mono">When:</div>
-               <time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="eventlist-element__date mono">
+              <div class="label font-mono">When:</div>
+               <time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="eventlist-element__date font-mono">
                  <span class="eventlist-element__date-day">{{ post.date | date: "%Y-%m-%d" }}</span>
                </time>
             </div>
 
             <div class="col-md-3">
-              <div class="label mono">Event:</div>
-              <span class="text-highlight text-bold mono">{{ post.type }}</span>
+              <div class="label font-mono">Event:</div>
+              <span class="text-highlight text-bold font-mono">{{ post.type }}</span>
             </div>
 
             <div class="col-md-3">
-              <div class="label mono">Venue:</div>
-              <span class="text-bold mono">{{ post.venue }}</span>
+              <div class="label font-mono">Venue:</div>
+              <span class="text-bold font-mono">{{ post.venue }}</span>
             </div>
 
             <div class="col-md-3">
-              <div class="label mono">Attendence:</div>
-              <span class="text-bold mono">
+              <div class="label font-mono">Attendence:</div>
+              <span class="text-bold font-mono">
               {% if post.free == 'true' %}
                 FREE
               {% else %}
@@ -94,7 +94,7 @@ class: pull-up-content--list
           <div class="row">
 
             <div class="col-md-3">
-                <span class="eventlist-element__date-duration mono text-highlight">
+                <span class="eventlist-element__date-duration font-mono text-highlight">
                   {{ post.date | date: "%-d %b" }}
                 </span>
             </div>
@@ -125,13 +125,13 @@ class: pull-up-content--list
 
           <div class="row eventlist-element__details__links">
             <div class="col-md-3 col-md-offset-6">
-              <a class="mono text-highlight" href="{{ post.url }}">Event website  &#8599;</a>
+              <a class="font-mono text-highlight" href="{{ post.url }}">Event website  &#8599;</a>
             </div>
 
             <div class="col-md-3">
               <div class="buy-tickets">
               {% unless post.free == 'true' %}
-                <a class="mono" href="{{ post.tickets }}">Buy tickets &#8599;</a>
+                <a class="font-mono" href="{{ post.tickets }}">Buy tickets &#8599;</a>
               {% endunless %}
               </div>
             </div>
@@ -165,7 +165,7 @@ class: pull-up-content--list
 
   <div class="row flex">
     <div class="col-md-3 col-md-offset-3 align-bottom">
-      <div class="mono">
+      <div class="font-mono">
         <p><a href="">Become a partner &#8594;</a></p>
         <p><a href="">Host an event &#8594;</a></p>
       </div>
