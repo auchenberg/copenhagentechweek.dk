@@ -5,8 +5,14 @@
   margin: 0;
   border: 0;
 
-  .logo img {
+  .logo {
     max-height: 130px;
   }
+
+  @media (max-width: 768px) {
+    .logo {
+      margin: 60px 0;
+    }
+  }  
 
 }

@@ -115,3 +115,36 @@ section {
   background: #0044ff;
   color: #fff;  
 }
+
+
+.show-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  section {
+    margin-bottom: 50px;
+  }
+
+  .show-desktop {
+    display: none;
+  }
+
+  .show-mobile {
+    display: block;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  .align-bottom {
+    display: block;
+  }
+
+}

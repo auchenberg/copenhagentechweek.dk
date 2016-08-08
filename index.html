@@ -6,22 +6,22 @@ class: pull-up-content--list
 ---
 
 <section class="splash">
-  <a name="spash">></a>
+  <a name="spash"></a>
 
-  <div class="row">      
-      <div class="col-md-3 col-md-offset-3">
-        <p class="font-calibre-black">
-          Celebrating technology. <br/> 
-          All over Copenhagen. <br/>
-          All of September.<br/>
-        </p>
-        
-        <div class="social font-mono">
-          <a href="">Twitter ↗</a>
-          <a href="">Facebook ↗</a>
-          <a href="">Medium ↗</a>
-        </div>
+  <div class="row show-desktop">      
+    <div class="col-md-3 col-md-offset-3">
+      <p class="font-calibre-black">
+        Celebrating technology. <br/> 
+        All over Copenhagen. <br/>
+        All of September.<br/>
+      </p>
+      
+      <div class="social font-mono">
+        <a href="">Twitter ↗</a>
+        <a href="">Facebook ↗</a>
+        <a href="">Medium ↗</a>
       </div>
+    </div>
   </div>
 
   <div class="row">
@@ -37,7 +37,7 @@ class: pull-up-content--list
         </div>
       </div>
   </div>
-
+  
   <div class="tape tape-1"></div>
   <div class="tape tape-2"></div>
   <div class="tape tape-3"></div>
@@ -54,7 +54,7 @@ class: pull-up-content--list
 </section>
 
 <section class="events">
-  <a name="events">></a>
+  <a name="events"></a>
   <h2>Event Calendar</h2>
 
   <ol class="eventlist" id="eventlist">
@@ -71,17 +71,17 @@ class: pull-up-content--list
                </time>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 show-desktop">
               <div class="label font-mono">Event:</div>
               <span class="text-highlight text-bold font-mono">{{ post.type }}</span>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 show-desktop">
               <div class="label font-mono">Venue:</div>
               <span class="text-bold font-mono">{{ post.venue }}</span>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 show-desktop">
               <div class="label font-mono">Attendence:</div>
               <span class="text-bold font-mono">
               {% if post.free == 'true' %}
@@ -95,7 +95,7 @@ class: pull-up-content--list
           
           <div class="row">
 
-            <div class="col-md-3">
+            <div class="col-md-3 show-desktop">
                 <span class="eventlist-element__date-duration font-mono text-highlight">
                   {% if post.endDate != nil %}
                     {{ post.date | date: "%-d" }}-{{ post.endDate | date: "%-d. %b" }}
@@ -115,22 +115,38 @@ class: pull-up-content--list
           </div>
 
           <div class="eventlist-element__details row">
-            <div class="col-md-3 intro">
+            <div class="col-md-6 col-md-push-6">
+               <img src="{{ post.image }}" />
+            </div>
+
+            <div class="col-md-3 col-md-pull-6 intro">
+              
+              <div class="eventlist-element__details__meta show-mobile">
+                <div>
+                  <div class="label font-mono">Event:</div>
+                  <span class="value text-highlight text-bold font-mono">{{ post.type }}</span>
+                </div>
+                <div>
+                  <div class="label font-mono">Venue:</div>
+                  <span class="value text-bold font-mono">{{ post.venue }}</span>
+                </div>
+              </div>
+
                <h5>{{ post.intro }}</h5>
             </div>
 
-            <div class="col-md-3 description align-bottom">
+            <div class="col-md-3 col-md-pull-6 description align-bottom">
                <p>{{ post.description }}</p>
-            </div>            
 
-            <div class="col-md-6">
-               <img src="{{ post.image }}" />
+               <div class="eventlist-element__details__links show-mobile">
+                  <p><a class="font-mono text-highlight" href="{{ post.url }}">Event website  &#8599;</a></p>
+               </div>
             </div>
 
           </div>
 
           <div class="row eventlist-element__details__links">
-            <div class="col-md-3 col-md-offset-6">
+            <div class="col-md-3 col-md-offset-6 show-desktop">
               <a class="font-mono text-highlight" href="{{ post.url }}">Event website  &#8599;</a>
             </div>
 
@@ -166,30 +182,31 @@ class: pull-up-content--list
 </section>
 
 <section class="about">
-  <a name="about">></a>
+  <a name="about"></a>
   <h2>About Copenhagen Techfest</h2>
 
-  <div class="slogan font-calibre-black">
+  <div class="slogan font-calibre-black show-desktop">
     Celebrating technology. <br/> 
     All over Copenhagen. <br/>
     All of September.<br/>
   </div>
 
   <div class="row flex">
-    <div class="col-md-3 col-md-offset-3 align-bottom">
+
+    <div class="col-md-3 col-md-push-6">
+      <p>Fast-growing startups, novel innovations, buzzing co-working spaces, rise in investments, experienced forces and lots of talent. With big news and hectic energy in the startup community, Copenhagen is racing to become the next tech hub.</p>
+      <p>At the brand new Copenhagen TechFest, we are celebrating this. For the first time in Denmark, we are uniting the startup community, aligning events, building a stage and putting the best ideas on it. Meet the talent, see the innovations and feel the energy, when we share the latest and put the future stars on a pedestal.</p>  
+    </div>
+
+    <div class="col-md-3 col-md-pull-3 col-md-offset-3 align-bottom">
       <div class="font-mono links">
         <p><a href="">Become a partner &#8594;</a></p>
         <p><a href="">Host an event &#8594;</a></p>
       </div>
     </div>
 
-    <div class="col-md-3">
-      <p>Fast-growing startups, novel innovations, buzzing co-working spaces, rise in investments, experienced forces and lots of talent. With big news and hectic energy in the startup community, Copenhagen is racing to become the next tech hub.</p>
-      <p>At the brand new Copenhagen TechFest, we are celebrating this. For the first time in Denmark, we are uniting the startup community, aligning events, building a stage and putting the best ideas on it. Meet the talent, see the innovations and feel the energy, when we share the latest and put the future stars on a pedestal.</p>  
-    </div>
 
-
-    <div class="arrow">
+    <div class="arrow show-desktop">
       <div class="arrow-1"></div>
       <div class="arrow-2"></div>
       <div class="arrow-3"></div>

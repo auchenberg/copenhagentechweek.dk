@@ -15,6 +15,12 @@
 
   .event-details {
     position: relative;
+
+    @media (max-width: 768px) {
+      img {
+        max-width: 60%;
+      }
+    }
   }
 
   .event-info {
@@ -23,6 +29,12 @@
     right: -20px;
 
     font-size: 16px;
+
+    @media (max-width: 768px) {
+      right: 40px;
+      top: 20px;
+    }
+
 
     h3 {
       font-size: 26px;
@@ -34,6 +46,7 @@
     p {
       margin: 0;
     }
+
   }
 
   .tape {
@@ -124,6 +137,66 @@
     top: 695px;
     transform: rotate(-102deg);
     left: 465px;
-  }   
+  }
+
+  @media (max-width: 768px) {
+    
+    .tape-1 {
+      top: -440px;
+      left: 30px;
+      transform: rotate(80deg);
+    }
+
+    .tape-2 {
+      width: 130px;
+      top: -200px;
+      left: -55px;
+      transform: rotate(67deg);
+    }
+
+    .tape-3 {
+      width: 100px;
+      top: -60px;
+      left: -40px;
+      transform: rotate(40deg);
+    }
+
+    .tape-4 {
+      width: 100px;
+      top: -53px;
+      left: 22px;
+      transform: rotate(80deg);
+    }
+
+    .tape-5 {
+      width: 80px;
+      top: -40px;
+      left: 155px;
+      transform: rotate(-50deg);
+    }
+
+    .tape-6 {
+      width: 180px;
+      top: 73px;
+      left: 324px;
+      transform: rotate(170deg);
+    }
+
+    .tape-7 {
+      width: 100px;
+      top: 160px;
+      left: -28px;
+      transform: rotate(111deg);      
+    }
+
+    .tape-8,
+    .tape-9,
+    .tape-10,
+    .tape-11,
+    .tape-12 {
+      display: none;;
+    }
+  }
    
 }
+
