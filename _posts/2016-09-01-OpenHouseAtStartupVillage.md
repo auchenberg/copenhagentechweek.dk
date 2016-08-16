@@ -6,9 +6,10 @@ date:   2016-09-01
 venue: "Startup Village"
 ticket: "Register"
 time: "09:00am"
-intro: "This is the first time Founders House and Startup VIllage open their doors giving everyone an opportunity to visit Denmark’s leading growth startup hub and gain valuable insight in the facets of running a growth startup."
+intro: "For anyone interested in entrepreneurship, innovation and technology"
+description: "This is the first time Founders House and Startup Village open their doors giving everyone an opportunity to visit Denmark’s leading growth startup hub and gain valuable insight in the facets of running a growth startup."
 url: "href: http://event.foundershouse.dk/open-house-at-startup-village/"
-type: "For anyone interested in entrepreneurship, innovation and technology"
+type: "Open house"
 image: "http://event.foundershouse.dk/images/belt-top.jpg"
 free: true
 ---
