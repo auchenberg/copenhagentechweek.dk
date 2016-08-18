@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CIID 10 - Impact Minds"
-subtitle: "20 world-class speakers on interaction design & innovation"
+subtitle: "20 speakers on interaction design & innovation"
 date:   2016-09-01
 venue: "Copenhagen Institute of Interaction Design"
 ticket: "Sold out"
