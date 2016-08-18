@@ -146,7 +146,7 @@ title: Copenhagen Tech Fest 2016
                <p>{{ post.description }}</p>
 
                <div class="eventlist-element__details__links show-mobile">
-                  <p><a class="font-mono text-highlight" href="{{ post.href }}">Event website  &#8599;</a></p>
+                  <p><a class="font-mono text-highlight" href="{{ post.href }}" target="_blank">Event website  &#8599;</a></p>
                </div>
             </div>
 
@@ -159,13 +159,13 @@ title: Copenhagen Tech Fest 2016
             </div>
 
             <div class="col-md-3 col-md-offset-5 show-desktop">
-              <a class="font-mono text-highlight" href="{{ post.href }}">Event website  &#8599;</a>
+              <a class="font-mono text-highlight" href="{{ post.href }}" target="_blank">Event website  &#8599;</a>
             </div>
 
             <div class="col-md-3">
               <div class="buy-tickets">
               {% unless post.free == 'true' %}
-                <a class="font-mono text-highlight" href="{{ post.tickets }}">Buy tickets &#8599;</a>
+                <a class="font-mono text-highlight" href="{{ post.tickets }}" target="_blank">Buy tickets &#8599;</a>
               {% endunless %}
               </div>
             </div>
