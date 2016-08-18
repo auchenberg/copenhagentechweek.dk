@@ -11,6 +11,6 @@ intro: "For anyone interested in front-end and web development"
 description: "At each event there will be a couple of presentations/talks and socialising. Topics include general technical topics like web development, HTML, CSS, Javascript but also design and inspirational topics."
 type: "Meetup"
 image: "img/copenhagenfrontenders_01.png"
-free: true
+free: "true"
 ---
 <!-- fill in the URL of your event host page if you haven't enough information for a detail page, so the event link won't point on the detail page at all -->
