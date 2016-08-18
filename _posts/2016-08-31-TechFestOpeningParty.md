@@ -1,3 +1,4 @@
+---
 layout: post
 title:  "Tech Fest Opening Party"
 subtitle: "Kick off party for the all-new Copenhagen Tech Fest"
@@ -12,3 +13,4 @@ description: "Copenhagen Tech Fest starts off with a celebration of everything t
 type: "Party"
 image: "img/openingparty_01.png"
 free: true
+---
