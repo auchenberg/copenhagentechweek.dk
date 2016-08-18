@@ -4,7 +4,7 @@ title:  "Startups pitch"
 subtitle: "Student jobs and internships"
 date:   2016-09-15
 venue: "Copenhage Business School"
-ticket: "RSVP"
+ticket: "Register"
 time: "03:00pm"
 href: "https://www.eventbrite.com/e/startups-pitch-student-jobs-and-internships-tickets-26719266044"
 tickets: "https://www.eventbrite.com/e/startups-pitch-student-jobs-and-internships-tickets-26719266044"
