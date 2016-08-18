@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Copenhagen Maker"
-subtitle: "Brand new D.I.Y. festival for technology, crafts and design"
+subtitle: "D.I.Y. festival for technology, crafts and design"
 date:   2016-09-23 - 2016-09-25
 venue: "KPH Volume"
 ticket: "Register"
