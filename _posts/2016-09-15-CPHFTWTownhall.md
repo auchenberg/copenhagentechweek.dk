@@ -1,3 +1,4 @@
+---
 layout: post
 title:  "#CPHFTW Townhall Event"
 subtitle: "Meet some of the biggest personalities in the startup scene."
