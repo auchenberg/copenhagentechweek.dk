@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tech Fest Opening Party"
-subtitle: "Kick off party for the all-new Copenhagen Tech Fest"
+subtitle: "Kick off party for Copenhagen Tech Fest"
 date:   2016-08-31
 venue: "Klub"
 ticket: "TBA"
