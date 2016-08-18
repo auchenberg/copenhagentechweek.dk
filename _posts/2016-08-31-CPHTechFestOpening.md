@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tech Fest Opening Party"
+title:  "CPH Tech Fest Opening"
 subtitle: "Kick off party for Copenhagen Tech Fest"
 date:   2016-08-31
 venue: "Klub"
