@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Komfo summit"
-subtitle: "Today is not about working more. Today is about being more smart."
+subtitle: "Let's celebrate that social gets smarter!"
 date:   2016-09-22
 venue: "Vega"
 ticket: "available"
