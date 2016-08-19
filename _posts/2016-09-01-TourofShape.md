@@ -11,7 +11,7 @@ tickets: "https://docs.google.com/a/cphftw.dk/forms/d/e/1FAIpQLSe_BZic14e_tQctGU
 intro: "For anyone interested in Shape, apps and startups"
 description: "Come and join the tour around the office from 13.00-13.30 and hear more about working in an app-making house."
 type: "Office tour"
-image: "img/shapetour_01.png"
+image: "img/shapetour_01.jpg"
 free: "true"
 ---
 <!-- fill in the URL of your event host page if you haven't enough information for a detail page, so the event link won't point on the detail page at all -->
