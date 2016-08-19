@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Open Day at Startup Village"
-subtitle: "Opening party"
+subtitle: "Visit Denmark's leading startup hub"
 date:   2016-09-01
 venue: "Startup Village"
 ticket: "Register"
