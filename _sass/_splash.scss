@@ -1,6 +1,28 @@
 
 .splash {
+  padding-top: 100px;
   font-size: 20px;
+  position: relative;
+  margin-bottom: 100px;
+
+  .animation {
+    position: absolute;
+    left: -250px;
+    top: -120px;
+    z-index: -1;
+  }
+
+  h1 {
+    font-size: 125px;
+    text-transform: uppercase;
+    line-height: 0.8;
+    margin-bottom: 40px;
+  }
+
+  .intro {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
 
   .social {
     padding: 20px 0 100px 0;
@@ -57,154 +79,5 @@
 
   }
 
-  .tape {
-    height: 30px;
-    width: 100px;
-    background: rgba(0, 67, 255, 0.9);
-    position: absolute;
-  }
-
-  .tape-1 {
-    top: 150px;
-    left: 80px;
-    transform: rotate(40deg);
-  }
-
-  .tape-2 {
-    width: 130px;
-    top: 320px;
-    left: 192px;
-    transform: rotate(14deg);
-  } 
-
-  .tape-3 {
-    width: 300px;
-    top: 520px;
-    left: 15px;
-    transform: rotate(-12deg);
-  }
-
-  .tape-4 {
-    width: 150px;
-    top: 621px;
-    left: 230px;
-    transform: rotate(-60deg);
-  }
-
-  .tape-5 {
-    width: 150px;
-    top: 621px;
-    left: 335px;
-    transform: rotate(-82deg);
-  }
-
-  .tape-6 {
-    width: 180px;
-    top: 621px;
-    left: 510px;
-    transform: rotate(-110deg);
-  }  
-
-  .tape-7 {
-    width: 140px;
-    top: 640px;
-    right: 250px;
-    transform: rotate(-140deg);
-  }
-
-  .tape-8 {
-    width: 140px;
-    top: 640px;
-    right: 0px;
-    transform: rotate(-150deg);
-  }  
-
-  .tape-9 {
-    width: 300px;
-    top: 500px;
-    right: -200px;
-    transform: rotate(-170deg);
-  }    
-
-  .tape-10 {
-    width: 220px;
-    top: 360px;
-    right: -200px;
-    transform: rotate(-185deg);
-  }     
-
-  .tape-11 {
-    width: 150px;
-    top: 237px;
-    right: 393px;
-    transform: rotate(120deg);
-  }
-
-  .tape-12 {
-    width: 60px;
-    top: 695px;
-    transform: rotate(-102deg);
-    left: 465px;
-  }
-
-  @media (max-width: 768px) {
-    
-    .tape-1 {
-      top: -440px;
-      left: 30px;
-      transform: rotate(80deg);
-    }
-
-    .tape-2 {
-      width: 130px;
-      top: -200px;
-      left: -55px;
-      transform: rotate(67deg);
-    }
-
-    .tape-3 {
-      width: 100px;
-      top: -60px;
-      left: -40px;
-      transform: rotate(40deg);
-    }
-
-    .tape-4 {
-      width: 100px;
-      top: -53px;
-      left: 22px;
-      transform: rotate(80deg);
-    }
-
-    .tape-5 {
-      width: 80px;
-      top: -40px;
-      left: 155px;
-      transform: rotate(-50deg);
-    }
-
-    .tape-6 {
-      width: 180px;
-      top: 73px;
-      left: 324px;
-      transform: rotate(170deg);
-    }
-
-    .tape-7 {
-      width: 100px;
-      top: 160px;
-      left: -28px;
-      transform: rotate(111deg);      
-    }
-
-    .tape-8,
-    .tape-9,
-    .tape-10,
-    .tape-11,
-    .tape-12 {
-      display: none;;
-    }
-  }
-   
 }
 
