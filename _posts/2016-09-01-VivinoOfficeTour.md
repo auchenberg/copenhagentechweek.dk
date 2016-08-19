@@ -3,7 +3,7 @@ layout: post
 title:  "Tour of Vivino"
 subtitle: "Office tour"
 date:   2016-09-01
-venue: "Vivino"
+venue: "Vivino @ Startup Village"
 ticket: "RSVP"
 time: "01:30pm"
 href: "https://docs.google.com/a/cphftw.dk/forms/d/e/1FAIpQLSdE_SVWB3RkiAVA9ki1CfdNyOPGIHVMVU22UY7bgon_7gV3yA/viewform?c=0&w=1"
