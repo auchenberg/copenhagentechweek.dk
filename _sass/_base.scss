@@ -113,7 +113,11 @@ section {
      
 .btn-primary {
   background: #0044ff;
-  color: #fff;  
+  color: #fff; 
+
+  &:link {
+    color: #fff; 
+  } 
 }
 
 
