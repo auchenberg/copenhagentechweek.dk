@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tour of Bold.dk"
-subtitle: "Tour of Bold.dk"
+subtitle: "The best football newssite of DK"
 date:   2016-09-01
 venue: "Bold.dk @ Startup Village"
 ticket: "RSVP"
