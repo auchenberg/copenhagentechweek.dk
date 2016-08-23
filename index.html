@@ -48,13 +48,8 @@ title: Copenhagen Tech Fest 2016
 
   <ol class="eventlist" id="eventlist">
   <div class="row-highlight"></div> 
-    {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %} 
-
     {% for post in site.posts reversed %}
-      {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-      {% capture eventClass %}{% if posttime < nowunix %}event-past hide{% else %}event-future{% endif %}{% endcapture %}
-
-      <li class="eventlist-element {{eventClass}} {{posttime}}-{{nowunix}}">
+      <li class="eventlist-element" data-unix="{{post.date | date: '%s'}}">
         <div class="eventlist-element__content" id="{{ post.id }}">
           <div class="row header">
 
@@ -287,6 +282,19 @@ title: Copenhagen Tech Fest 2016
       $(this).toggleClass('state-expanded')
     })
 
+
+    $('.events li').each(function() {
+        var elmEvent = $(this)
+        var eventTime = elmEvent.data('unix');
+        var currentTime = (new Date).getTime() / 1000;
+
+        if(currentTime > eventTime ) {
+          elmEvent.addClass('event-past hide')
+        } else {
+          elmEvent.addClass('event-future')
+        }
+    })
+    
     $('.link-show-past-events').on('click', function(e) {
       $('.events li.event-past').toggleClass('hide')
       return false
