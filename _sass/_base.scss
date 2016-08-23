@@ -39,6 +39,14 @@ body {
 
 h1, h2, h3, h4 {
   @extend .font-calibre-black;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+    -ms-hyphens: auto;
+        hyphens: auto;
 }
 
 h2 {
