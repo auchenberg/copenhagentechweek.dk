@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Early-stage investment fund looking for Danish startups"
+title:  "VCs talking European startup ecosystems"
 subtitle: "Meet CEO of irish investment fund Ian Lucey"
 date:   2016-09-13
 venue: "Rocket Labs Aps"
