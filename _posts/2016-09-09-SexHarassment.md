@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Sex Harassment vs. consent on social media"
-subtitle: "Hosted by Trustpilot"
 date:   2016-09-08
 venue: "TDC Groups stadepladstelt / Ungdommens Folkemøde"
 ticket: "TBA"
