@@ -4,7 +4,7 @@ title:  "Cybersecurity in Europe"
 subtitle: "Research, industry, and innovation opportunities"
 date:   2016-09-09
 venue: "Industriens Hus"
-ticket: "RSVP"
+ticket: "Available"
 time: "10:30am"
 href: "http://www.cfir.dk/Arrangementer/Eksternearrangementer/Pages/Cybersecurity-in-Europe.aspx"
 tickets: "https://docs.google.com/a/cphftw.dk/forms/d/e/1FAIpQLSc1prsHEW6v9_cKsJKYqGjH3IL3eUiayrwkEVD81iBPEXwHvw/viewform"
