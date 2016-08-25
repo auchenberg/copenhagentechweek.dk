@@ -2,7 +2,7 @@
 layout: post
 title:  "Sex Harassment"
 subtitle: "vs. consent on social media"
-date:   2016-09-08
+date:   2016-09-09
 venue: "TDC Groups stadepladstelt / Ungdommens Folkemøde"
 ticket: "TBA"
 time: "12:30pm"
