@@ -70,7 +70,7 @@ a:link {
   text-decoration: none;
   color: #000;
 
-  &:hover, 
+  &:hover,
   &:focus {
     text-decoration: underline;
     color: #000;
@@ -78,7 +78,7 @@ a:link {
 }
 
 .text-highlight {
-   color: #0043ff !important;  
+   color: #0043ff !important;
 }
 
 .text-bold {
@@ -102,7 +102,7 @@ section {
 
 .align-bottom {
   display: flex;
-  align-items: flex-end;  
+  align-items: flex-end;
 }
 
 .flex {
@@ -118,7 +118,7 @@ section {
 }
 
 .font-mono {
-  font-family: 'Space Mono', monospace;  
+  font-family: 'Space Mono', monospace;
 }
 
 .btn {
@@ -126,15 +126,15 @@ section {
   font-size: 20px;
   border-radius: 0;
 }
-     
+
 .btn-primary {
   background: #0044ff;
-  color: #fff; 
+  color: #fff;
   transition: background-color 0.3s;
 
   &:link {
-    color: #fff; 
-  } 
+    color: #fff;
+  }
 
   &:hover {
     background: #000;

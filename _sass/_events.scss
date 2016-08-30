@@ -26,9 +26,9 @@
     &:last-child {
       border-bottom: 1px solid #000;
     }
-   
+
     &.state-expanded {
-      
+
       .eventlist-element__details {
         display: flex;
       }
@@ -46,7 +46,7 @@
 
     .expanded-indicator {
       font-weight: bold;
-      
+
       .up {
         display: none;
       }
@@ -101,7 +101,7 @@
   font-size: 40px;
   line-height: 40px;
   font-family: "Calibre", sans-serif;
-  font-weight: normal;  
+  font-weight: normal;
 }
 
 .eventlist-element__date-duration {
@@ -113,7 +113,7 @@
   height: 370px;
 
   .intro {
-    h5 { 
+    h5 {
       font-size: 30px;
     }
   }
@@ -129,7 +129,7 @@
   text-decoration: underline;
 }
 .events-join {
-  
+
   p, h4 {
     font-size: 30px;
     line-height: 36px;
@@ -182,11 +182,11 @@
   .eventlist-element__details__meta {
     margin-top: 10px;
 
-    .label, 
+    .label,
     .value {
       font-size: 12px;
     }
-  }  
+  }
 
   .eventlist-element__date {
     color: #0043ff;
