@@ -6,28 +6,28 @@ title: Copenhagen Tech Fest 2016
 <section class="splash">
   <a name="splash"></a>
 
-  <div class="row show-desktop"> 
+  <div class="row show-desktop">
     <div class="col-md-9 col-md-offset-3">
       <h1>Copenhagen Tech Fest</h1>
       <img class="animation" src="/img/splash.gif" />
     </div>
   </div>
 
-  <div class="row"> 
+  <div class="row">
     <div class="col-md-6 col-md-offset-3 font-mono intro text-highlight">
       <p>Copenhagen Tech Fest is the one-stop shop to the best of Danish technology and startups. +25 events in more than 15 venues  all over Copenhagen, Sept 1-30.</p>
       <p>In other words:</p>
     </div>
   </div>
 
-  <div class="row"> 
+  <div class="row">
     <div class="col-md-3 col-md-offset-3">
       <p class="font-calibre-black">
-        All about Technology<br/> 
-        All over Copenhagen<br/> 
+        All about Technology<br/>
+        All over Copenhagen<br/>
         All of September<br/>
       </p>
-      
+
       <div class="social font-mono">
         <a href="https://instagram.com/cphtechfest"><img src="img/instagram.svg" />Instagram ↗</a>
         <a href="https://twitter.com/cphtechfest"><img src="img/twitter.svg" />Twitter ↗</a>
@@ -51,7 +51,7 @@ title: Copenhagen Tech Fest 2016
   </div>
 
   <ol class="eventlist" id="eventlist">
-  <div class="row-highlight"></div> 
+  <div class="row-highlight"></div>
     {% for post in site.posts reversed %}
       <li class="eventlist-element" data-unix="{{post.date | date: '%s'}}">
         <div class="eventlist-element__content" id="{{ post.id }}">
@@ -85,7 +85,7 @@ title: Copenhagen Tech Fest 2016
               </span>
             </div>
           </div>
-          
+
           <div class="row">
 
             <div class="col-md-3 show-desktop">
@@ -113,7 +113,7 @@ title: Copenhagen Tech Fest 2016
             </div>
 
             <div class="col-md-3 col-md-pull-6 intro">
-              
+
               <div class="eventlist-element__details__meta show-mobile">
                 <div>
                   <div class="label font-mono">Event:</div>
@@ -162,7 +162,7 @@ title: Copenhagen Tech Fest 2016
       </li>
     {% endfor %}
   </ol>
-  
+
   <div class="events-join">
     <div class="row">
       <div class="col-md-6">
@@ -184,8 +184,8 @@ title: Copenhagen Tech Fest 2016
   <h2>About Copenhagen Techfest</h2>
 
   <div class="slogan font-calibre-black show-desktop">
-    All about Technology<br/> 
-    All over Copenhagen<br/> 
+    All about Technology<br/>
+    All over Copenhagen<br/>
     All of September<br/>
   </div>
 
@@ -215,24 +215,32 @@ title: Copenhagen Tech Fest 2016
 <section class="co-creators">
   <a name="co-creators"></a>
   <h2>Co-creators</h2>
- 
+
   <div class="row">
     <div class="col-md-3 col-md-offset-3">
         <h3>We have the best friends</h3>
         <p>We have some fantastic partners, who are making this festival come alive. Give them some love - or join them!</p>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="col-md-9 col-md-offset-3 logos">
-      <a href="http://www.momondo.dk/"><img src="img/momondo.png" /></a>
-      <a href="https://www.twentythree.net/"><img src="img/23.png" /></a>
-      <a href="http://siteimprove.com/"><img src="img/siteimprove.png" /></a>
-      <a href="https://tradeshift.com/"><img src="img/tradeshift.png" /></a>
-      <a href="https://unity3d.com/"><img src="img/unity.png" /></a>
-      <a href="https://www.zendesk.com/"><img src="img/zendesk.png" /></a>
-      <a href="https://www.simplesite.com"><img src="img/simplesite.png" /></a>
-      <a href="http://international.kk.dk/live"><img src="img/cityofcopenhagen.png" /></a>
+      <div class="row">
+        <a href="http://www.momondo.dk/"><img src="img/momondo.png" /></a>
+        <a href="https://www.twentythree.net/"><img src="img/23.png" /></a>
+        <a href="http://siteimprove.com/"><img src="img/siteimprove.png" /></a>
+      </div>
+      <div class="row">
+        <a href="https://tradeshift.com/"><img src="img/tradeshift.png" /></a>
+        <a href="https://unity3d.com/"><img src="img/unity.png" /></a>
+        <a href="https://www.zendesk.com/"><img src="img/zendesk.png" /></a>
+      </div>
+      <div class="row center">
+        <a href="https://www.simplesite.com"><img src="img/simplesite.png" /></a>
+      </div>
+      <div class="row center">
+        <a href="http://international.kk.dk/live"><img src="img/cityofcopenhagen.png" /></a>
+      </div>
     </div>
   </div>
 
@@ -249,7 +257,7 @@ title: Copenhagen Tech Fest 2016
         <p>Contact Festival Director Marie Gørvild at <a class="text-highlight" href="mailto:mg@cphftw.dk">mg@cphftw.dk</a> / +45 61709104</p>
     </div>
   </div>
-  
+
   <div class="row newsletter">
     <div class="col-md-6 col-md-offset-3">
       <div id="mc_embed_signup">
@@ -261,14 +269,14 @@ title: Copenhagen Tech Fest 2016
         <div id="mce-responses" class="clear text-bold">
             <div class="response" id="mce-error-response" style="display:none"></div>
             <div class="response" id="mce-success-response" style="display:none"></div>
-        </div>         
+        </div>
         <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
         <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
       </div>
 
       <div class="social">
         <a href="https://instagram.com/cphtechfest"><img src="img/instagram.svg" />Instagram ↗</a>
-        <a href="https://twitter.com/cphtechfest"><img src="img/twitter.svg" />Twitter ↗</a> 
+        <a href="https://twitter.com/cphtechfest"><img src="img/twitter.svg" />Twitter ↗</a>
         <a href="https://facebook.com/cphtechfest"> <img src="img/facebook.svg" />Facebook ↗</a>
         <a href="https://medium.com/@cphftw"> <img src="img/medium.svg" />Medium ↗</a>
       </div>
@@ -298,7 +306,7 @@ title: Copenhagen Tech Fest 2016
           elmEvent.addClass('event-future')
         }
     })
-    
+
     $('.link-show-past-events').on('click', function(e) {
       $('.events li.event-past').toggleClass('hide')
       return false
