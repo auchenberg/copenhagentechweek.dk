@@ -90,7 +90,14 @@ a:link {
 }
 
 section {
-  margin-bottom: 200px; 
+  margin-bottom: 200px;
+
+  &.image-section {
+    margin: -50px 0 100px;
+    img {
+      max-width: 100%
+    }
+  }
 }
 
 .align-bottom {
