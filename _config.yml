@@ -5,6 +5,11 @@ description: "All about Technology - All over Copenhagen - All of September"
 baseurl: "http://cphtechfest.org"
 exclude:
   - README.md
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+  - Gruntfile.js
+  - package.json
 
 # Build settings
 markdown: kramdown
