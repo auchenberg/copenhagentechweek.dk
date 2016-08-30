@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Relate Spotlight Copenhagen"
+title:  "Relate Spotlight by Zendesk"
 subtitle: "For those who believe better relationships should be a driving force in business"
 date:   2016-09-20
 venue: "Mogens Dahl Koncertsal - Snorresgade 22, 2300 København"
