@@ -315,10 +315,24 @@ title: Copenhagen Tech Fest 2016
 
     $('.events li').each(function() {
         var elmEvent = $(this)
-        var eventTime = elmEvent.data('unix');
-        var currentTime = (new Date).getTime() / 1000;
+        var eventTime = new Date(Number(elmEvent.data('unix')) * 1000);
+        var currentTime = new Date();
 
-        if(currentTime > eventTime ) {
+        var past = false;
+
+        if (currentTime.getYear() > eventTime.getYear()) {
+          past = true;
+        } else if (currentTime.getYear() == eventTime.getYear()) {
+          if (currentTime.getMonth() > eventTime.getMonth()) {
+            past = true;
+          } else if (currentTime.getMonth() == eventTime.getMonth()) {
+            if (currentTime.getDate() > eventTime.getDate()) {
+              past = true;
+            }
+          }
+        }
+
+        if (past) {
           elmEvent.addClass('event-past hide')
         } else {
           elmEvent.addClass('event-future')
