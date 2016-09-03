@@ -2,7 +2,10 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md-3 col-md-push-9">
+      <div class="col-md-3 col-md-push-9 parallax"
+        data-top-move-start=0.2
+        data-bottom-move-start=1
+        data-exponential=2>
         <div class="site-nav">
           <a class="highlight" href="#events">Event Calendar</a>
           <a class="highlight" href="#about">About</a>
@@ -13,7 +16,10 @@
         </div>
       </div>
 
-      <div class="col-md-3 col-md-pull-9 col-md-offset-6">
+      <div class="col-md-3 col-md-pull-9 col-md-offset-6 parallax"
+        data-top-move-start=0.1
+        data-bottom-move-start=1
+        data-exponential=1.2>
         <a href="{{ site.baseurl }}/">
           <img class="logo" src="img/logo.svg"/>
         </a>

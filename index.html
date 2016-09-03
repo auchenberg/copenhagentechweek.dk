@@ -9,7 +9,13 @@ title: Copenhagen Tech Fest 2016
   <div class="row show-desktop">
     <div class="col-md-9 col-md-offset-3">
       <h1>Copenhagen Tech Fest</h1>
-      <img class="animation" src="/img/splash.gif" />
+      <img class="animation parallax" src="/img/splash.gif"
+        data-top-move-start=0.6
+        data-bottom-move-start=1
+        data-exponential=1.6
+        src="/img/splash.gif" />
+
+      />
     </div>
   </div>
 
@@ -28,7 +34,10 @@ title: Copenhagen Tech Fest 2016
         All of September<br/>
       </p>
 
-      <div class="social font-mono">
+      <div class="social font-mono parallax"
+        data-top-move-start=0
+        data-bottom-move-start=0.5
+        data-exponential=2>
         <a href="https://instagram.com/cphtechfest"><img src="img/instagram.svg" />Instagram ↗</a>
         <a href="https://twitter.com/cphtechfest"><img src="img/twitter.svg" />Twitter ↗</a>
         <a href="https://facebook.com/cphtechfest"> <img src="img/facebook.svg" />Facebook ↗</a>
@@ -148,13 +157,13 @@ title: Copenhagen Tech Fest 2016
               <a class="font-mono text-highlight" href="{{ post.href }}" target="_blank">Event website  &#8599;</a>
             </div>
 
-            <div class="col-md-3">
-              <div class="buy-tickets">
-              {% unless post.free == 'true' %}
-                <a class="font-mono text-highlight" href="{{ post.tickets }}" target="_blank">Buy tickets &#8599;</a>
-              {% endunless %}
+            {% unless post.free == 'true' %}
+              <div class="col-md-3">
+                <div class="buy-tickets">
+                  <a class="font-mono text-highlight" href="{{ post.tickets }}" target="_blank">Buy tickets &#8599;</a>
+                </div>
               </div>
-            </div>
+            {% endunless %}
 
           </div>
 
@@ -304,7 +313,6 @@ title: Copenhagen Tech Fest 2016
 </section>
 
 
-
 <script>
 
   $(function() {
@@ -343,6 +351,73 @@ title: Copenhagen Tech Fest 2016
       $('.events li.event-past').toggleClass('hide')
       return false
     })
-  })
+
+    window.onScroll = function () {
+      if ($(window).width() > 768) {
+        var scrollTop     = $(window).scrollTop();
+        var windowHeight  = $(window).height();
+
+        $('.parallax').each(function() {
+          // Get normal offset
+          var top;
+          if (!isNaN(Number($(this).css('top').replace('px', '')))) {
+            top = Number($(this).css('top').replace('px', ''));
+          } else {
+            top = 0;
+          }
+
+          var posY    = $(this).offset().top - top + $(this).height() / 2;
+          var offset  = scrollTop - posY;
+
+          var relPos  = - offset / windowHeight;
+
+          $(this).attr({
+            'data-top':     top,
+            'data-posY':    posY,
+            'data-offset':  offset,
+            'data-relPos':  relPos,
+          })
+
+          var topMoveStart=0,
+              bottomMoveStart=1,
+              exponential=0;
+
+          if ($(this).attr('data-top-move-start')) {
+            topMoveStart = Number($(this).attr('data-top-move-start'));
+          }
+          if ($(this).attr('data-bottom-move-start')) {
+            bottomMoveStart = Number($(this).attr('data-bottom-move-start'));
+          }
+          if ($(this).attr('data-exponential')) {
+            exponential = Number($(this).attr('data-exponential'));
+          }
+
+          var dataTop = 0;
+
+          if ((relPos < topMoveStart)) {
+            dataTop = (relPos - topMoveStart) * windowHeight * exponential;
+          } else if (relPos > bottomMoveStart) {
+            dataTop = (relPos - bottomMoveStart) * windowHeight * exponential;
+          }
+
+          $(this).attr({
+            'data-top': dataTop
+          });
+          $(this).css({
+            'top': dataTop
+          });
+
+        });
+      } else {
+        $('.parallax').css({
+          top: 0
+        });
+      }
+
+    };
+    window.onScroll();
+    $(window).scroll(window.onScroll);
+
+  });
 
   </script>
