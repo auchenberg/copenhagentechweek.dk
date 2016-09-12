@@ -9,12 +9,14 @@ title: Copenhagen Tech Fest 2016
   <div class="row show-desktop">
     <div class="col-md-9 col-md-offset-3">
       <h1>Copenhagen Tech Fest</h1>
-      <img class="animation parallax" src="/img/splash.gif"
-        data-top-move-start=0.4
-        data-bottom-move-start=1
-        data-exponential=1.6
-        src="/img/splash.gif"
-      />
+      <div class="animation">
+        <img class="parallax" src="/img/splash.gif"
+          data-top-move-start=120
+          data-bottom-move-start=0
+          data-exponential=1.6
+          src="/img/splash.gif"
+        />
+      </div>
     </div>
   </div>
 
@@ -35,8 +37,8 @@ title: Copenhagen Tech Fest 2016
 
       <div class="social font-mono parallax"
         data-top-move-start=0
-        data-bottom-move-start=0.5
-        data-exponential=2>
+        data-bottom-move-start=0
+        data-exponential=4>
         <a href="https://instagram.com/cphtechfest"><img src="img/instagram.svg" />Instagram ↗</a>
         <a href="https://twitter.com/cphtechfest"><img src="img/twitter.svg" />Twitter ↗</a>
         <a href="https://facebook.com/cphtechfest"> <img src="img/facebook.svg" />Facebook ↗</a>
@@ -368,21 +370,17 @@ title: Copenhagen Tech Fest 2016
             top = 0;
           }
 
-          var posY    = $(this).offset().top - top + $(this).height() / 2;
-          var offset  = scrollTop - posY;
+          var topPos    = $(this).offset().top - top;
+          var height    = $(this).height();
+          var bottomPos = topPos + height;
 
-          var relPos  = - offset / windowHeight;
+          var offset        = topPos - scrollTop;
+          var bottomOffset  = windowHeight - (offset + height);
 
-          $(this).attr({
-            'data-top':     top,
-            'data-posY':    posY,
-            'data-offset':  offset,
-            'data-relPos':  relPos,
-          })
-
+          // Figure out where to start and end
           var topMoveStart=0,
-              bottomMoveStart=1,
-              exponential=0;
+              bottomMoveStart=0,
+              exponential=1;
 
           if ($(this).attr('data-top-move-start')) {
             topMoveStart = Number($(this).attr('data-top-move-start'));
@@ -394,12 +392,27 @@ title: Copenhagen Tech Fest 2016
             exponential = Number($(this).attr('data-exponential'));
           }
 
+          // Figuring out where to move (up/down/none)
           var dataTop = 0;
 
-          if ((relPos < topMoveStart)) {
-            dataTop = (relPos - topMoveStart) * windowHeight * exponential;
-          } else if (relPos > bottomMoveStart) {
-            dataTop = (relPos - bottomMoveStart) * windowHeight * exponential;
+          // Seeing if there's basis to move, based on top and bottom positions
+          var moveTop     = offset < topMoveStart,
+              moveBottom  = windowHeight - offset - height < bottomMoveStart;
+
+          if (windowHeight <= height + offset + bottomOffset) {
+            // Small windows, change how elements move
+            if (moveTop && !moveBottom) {
+              dataTop = -(topMoveStart - offset) * exponential;
+            } else if (moveBottom && !moveTop) {
+              dataTop = (bottomMoveStart - (windowHeight - offset - height)) * exponential;
+            }
+          } else {
+            // Normal window
+            if (offset < topMoveStart) {
+              dataTop = -(topMoveStart - offset) * exponential;
+            } else if (windowHeight - offset - height < bottomMoveStart) {
+              dataTop = (bottomMoveStart - (windowHeight - offset - height)) * exponential;
+            }
           }
 
           $(this).attr({

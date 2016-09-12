@@ -10,6 +10,7 @@ exclude:
   - CNAME
   - Gruntfile.js
   - package.json
+  - node_modules
 
 # Build settings
 markdown: kramdown
