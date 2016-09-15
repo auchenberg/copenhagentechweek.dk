@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "TechBBQ"
+subtitle: "Network. Accelerate. Go Global."
+date:   2016-09-20
+venue: "Copenhagen Opera House"
+ticket: "RSVP"
+time: "09:00am"
+href: "http://techbbq.dk/"
+tickets: "http://techbbq.dk/#registration"
+intro: "For anyone interested in networking, innovation and tech"
+description: "Listen to inspirational speakers from all over the world, get to know the angels and the VCs in the Investor Corner, look for talent or jobs, talk to an old friend or have a beer with someone you just met. Once a year, in Copenhagen, we gather everyone, for one day, with one goal: To explore opportunities together. "
+type: "Summit"
+image: "img/TechBBQ.jpg"
+free: "false"
+---
+<!-- fill in the URL of your event host page if you haven't enough information for a detail page, so the event link won't point on the detail page at all -->
