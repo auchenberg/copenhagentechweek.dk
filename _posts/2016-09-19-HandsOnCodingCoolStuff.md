@@ -2,7 +2,7 @@
 layout: post
 title:  "Hands On: Coding Cool Stuff"
 subtitle: "Two developers will share some of their work and explain how they did what they did."
-date:   2016-09-20
+date:   2016-09-19
 venue: "NOHO"
 ticket: "Sign up"
 time: "05:30pm"
