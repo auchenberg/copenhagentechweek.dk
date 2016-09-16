@@ -4,7 +4,7 @@ title:  "MakerMind"
 subtitle: "The growing tech DIY Culture"
 date:   2016-09-23
 venue: "GAME ved KPH Volume"
-ticket: "Sign up"
+ticket: "Paid"
 time: "06:30pm"
 href: "https://butik.information.dk/products/makerminds"
 tickets: "https://billetto.dk/da/events/copenhagen-maker/tickets"
