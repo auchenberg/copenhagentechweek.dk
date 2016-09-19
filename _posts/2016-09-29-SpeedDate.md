@@ -12,6 +12,6 @@ intro: "For anyone interested in networking and startups"
 description: "Join an afternoon of speeddating some hot Copenhagen tech startups; Heaps, Mover, Deemly, ToGoodToGo, Founders, Soundboks and Tradono. And maybe meet your future employer and coworkers. Come by for a beer and a chat and network with the hottest tech startups and industry friends. "
 type: "Networking"
 image: "img/SpeedDate.jpg"
-free: "false"
+free: "true"
 ---
 <!-- fill in the URL of your event host page if you haven't enough information for a detail page, so the event link won't point on the detail page at all -->
