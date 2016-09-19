@@ -10,7 +10,7 @@ href: "https://www.facebook.com/events/1587534544883994/"
 tickets: "https://www.facebook.com/events/1587534544883994/"
 intro: "For anyone interested in networking and startups"
 description: "Join an afternoon of speeddating some hot Copenhagen tech startups; Heaps, Mover, Deemly, ToGoodToGo, Founders, Soundboks and Tradono. And maybe meet your future employer and coworkers. Come by for a beer and a chat and network with the hottest tech startups and industry friends. "
-type: "Meetup"
+type: "Networking"
 image: "img/SpeedDate.jpg"
 free: "false"
 ---
