@@ -3,7 +3,7 @@ layout: post
 title:  "Dribble & Iconfinder Meetup"
 subtitle: "Copenhagen"
 date:   2016-09-29
-venue: "TBA"
+venue: "Falcon.io"
 ticket: "RSVP"
 time: "05:30pm"
 href: "https://nvite.com/DribbbleMeetupCPH/ecdd"
