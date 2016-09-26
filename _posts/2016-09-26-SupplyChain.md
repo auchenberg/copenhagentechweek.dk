@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Supply Chain Security"
-subtitle: "By Copenhagen Finntech Security and Research"
+subtitle: "By Copenhagen Fintech Security and Research"
 date:   2016-09-26
 venue: "Dansk Industri"
 ticket: "RSVP"
