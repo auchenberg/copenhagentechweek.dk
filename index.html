@@ -52,13 +52,6 @@ title: Copenhagen Tech Fest 2016
 <section class="events">
   <a name="events"></a>
   <h2>Event Calendar</h2>
-  <div class="nav">
-    <div class="row">
-      <div class="col-md-3 col-md-push-3">
-        <a href="#" class="link-show-past-events">Show past events &#8595;</a>
-      </div>
-    </div>
-  </div>
 
   <ol class="eventlist" id="eventlist">
   <div class="row-highlight"></div>
@@ -322,38 +315,6 @@ title: Copenhagen Tech Fest 2016
   $(function() {
     $('.events li').on('click', function(elmTarget) {
       $(this).toggleClass('state-expanded')
-    })
-
-
-    $('.events li').each(function() {
-        var elmEvent = $(this)
-        var eventTime = new Date(Number(elmEvent.data('unix')) * 1000);
-        var currentTime = new Date();
-
-        var past = false;
-
-        if (currentTime.getYear() > eventTime.getYear()) {
-          past = true;
-        } else if (currentTime.getYear() == eventTime.getYear()) {
-          if (currentTime.getMonth() > eventTime.getMonth()) {
-            past = true;
-          } else if (currentTime.getMonth() == eventTime.getMonth()) {
-            if (currentTime.getDate() > eventTime.getDate()) {
-              past = true;
-            }
-          }
-        }
-
-        if (past) {
-          elmEvent.addClass('event-past hide')
-        } else {
-          elmEvent.addClass('event-future')
-        }
-    })
-
-    $('.link-show-past-events').on('click', function(e) {
-      $('.events li.event-past').toggleClass('hide')
-      return false
     })
 
     window.onScroll = function () {
