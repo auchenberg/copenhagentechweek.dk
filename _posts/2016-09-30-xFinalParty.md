@@ -5,7 +5,7 @@ subtitle: "Now we close down the first edition of our new tech festival - but no
 date:   2016-09-30
 venue: "TwentyThree"
 ticket: "Sign up"
-time: "08:00pm"
+time: "04:00pm"
 href: "https://www.facebook.com/events/504360983090759/"
 tickets: "https://www.eventbrite.com/e/cph-tech-fest-final-party-tickets-28037587178"
 intro: "For anyone interested in networking and startups"
