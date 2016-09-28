@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "An Intro To Kickstarter: Copenhagen"
-subtitle: "Join Outreach Lead and Kickstarter creator Monika Kanokova for a primer on Kickstarter"
+subtitle: "Join Outreach Lead Monika Kanokova for a primer on Kickstarter"
 date:   2016-09-27
 venue: "Noho"
 ticket: "RSVP"
