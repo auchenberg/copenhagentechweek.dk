@@ -11,7 +11,7 @@ tickets: "https://docs.google.com/a/cphftw.dk/forms/d/e/1FAIpQLSfAtwxKCxTmnOKsm2
 intro: "For anyone interested in Churchdesk and startups"
 description: "Tour of the office from 14.00-14.30, with a chance to meet the team."
 type: "Office tour"
-image: "img/churchdesktour_01.png"
+image: "/img/churchdesktour_01.png"
 free: "true"
 ---
 <!-- fill in the URL of your event host page if you haven't enough information for a detail page, so the event link won't point on the detail page at all -->

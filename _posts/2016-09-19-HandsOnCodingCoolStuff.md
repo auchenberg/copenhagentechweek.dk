@@ -11,7 +11,7 @@ tickets: "http://www.foocafe.org/event/hands-on-coding-cool-stuff"
 intro: "For anyone interested in coding and UI"
 description: "Our first speaker is Daniel Lazarovici, Web Component Team Lead at Falcon.io. He will cover the principles of the Gooey effect using CSS and SVG and how the implementation of this effect could have a nice kick to our UI. "
 type: "Meetup"
-image: "img/HandsOnCoding.jpg"
+image: "/img/HandsOnCoding.jpg"
 free: "false"
 ---
 <!-- fill in the URL of your event host page if you haven't enough information for a detail page, so the event link won't point on the detail page at all -->

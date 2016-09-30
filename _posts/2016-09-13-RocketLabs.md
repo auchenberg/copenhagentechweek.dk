@@ -11,7 +11,7 @@ tickets: "https://www.eventbrite.com/e/irish-early-stage-investment-fund-is-look
 intro: "For anyone interested in startups and funding"
 description: "Together with Kenneth Dambo from Northcap.vc, Ian will talk the differences and similarities of startup ecosystems in Ireland, the UK and Scandinavia."
 type: "Meetup"
-image: "img/RocketLabs_01.jpg"
+image: "/img/RocketLabs_01.jpg"
 free: "true"
 ---
 <!-- fill in the URL of your event host page if you haven't enough information for a detail page, so the event link won't point on the detail page at all -->

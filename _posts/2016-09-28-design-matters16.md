@@ -11,7 +11,7 @@ description: "We will hear from top designers that are working with apps, websit
 time: "See Website for details"
 href: "https://designmatters16.dk/"
 tickets: "https://designmatters16.dk/get-tickets/"
-image: "img/designmatters_01.png"
+image: "/img/designmatters_01.png"
 type: "Conference"
 free: "false"
 ---

@@ -11,7 +11,7 @@ tickets: "https://www.eventbrite.co.uk/e/relate-spotlight-copenhagen-tickets-271
 intro: "For anyone interested in customer relationship and customer experience"
 description: "At Relate Spotlight, we will give you the inspiration you need to improve your relationships. Experts keynotes and networking are on the agenda for this afternoon dedicated to build better relationships with your customers. We bring together industry experts, customer service leaders and data analytics specialists to join us for a half-day thought leadership conference."
 type: "Conference"
-image: "img/relatespotlight.jpg"
+image: "/img/relatespotlight.jpg"
 free: "false"
 ---
 <!-- fill in the URL of your event host page if you haven't enough information for a detail page, so the event link won't point on the detail page at all -->

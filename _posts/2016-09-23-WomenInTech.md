@@ -11,7 +11,7 @@ tickets: "https://www.eventbrite.com/e/women-in-tech-dk-x-zendesk-friday-bar-tic
 intro: "For anyone interested in networking, Women in Tech and beer"
 description: "The main purpose of this event is to get know other startup Founders and share experiences with likeminded people. We're inviting our community of female tech Founders, but anyone is welcome to join by signing up."
 type: "Friday bar"
-image: "img/womentech.jpg"
+image: "/img/womentech.jpg"
 free: "true"
 ---
 <!-- fill in the URL of your event host page if you haven't enough information for a detail page, so the event link won't point on the detail page at all -->

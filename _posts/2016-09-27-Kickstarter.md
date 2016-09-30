@@ -11,7 +11,7 @@ tickets: "https://www.eventbrite.com/e/an-intro-to-kickstarter-copenhagen-ticket
 intro: "For anyone interested in Kickstarter, crowdfunding and workshops"
 description: "In this workshop, you’ll get pointers to help you craft a great campaign, rally a community around your project, and make your idea a reality.The creators of Me-Mover and Sitpack will also be joining us for a Q&A session. Hear their approach to running a stellar campaign and ask any questions that you have about getting started."
 type: "Workshop"
-image: "img/kickstarter_01.jpg"
+image: "/img/kickstarter_01.jpg"
 free: "true"
 ---
 <!-- fill in the URL of your event host page if you haven't enough information for a detail page, so the event link won't point on the detail page at all -->

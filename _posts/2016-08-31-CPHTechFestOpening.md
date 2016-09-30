@@ -11,6 +11,6 @@ tickets: "https://www.eventbrite.com/e/opening-event-copenhagen-tech-fest-ticket
 intro: "For anyone interested in networking and celebrating"
 description: "Copenhagen Tech Fest starts off with a celebration of everything techy. Presentations by: Morten Elk, Founder and CEO of Simplesite, Andreas Cleve, CEO and Co-founder, Corti Labs. Debate between three spokespersons for entrepreneurship: Ida Auken (Radikale Venstre), Rene Gade (Alternativet), and Jakob Engel-Schmidt (Venstre). Moderated by Niels Lund (editor-in-chief, Børsen). Presentations of major events during Copenhagen Tech Fest. Note: The talks will be in Danish."
 type: "Opening"
-image: "img/openingparty_01.png"
+image: "/img/openingparty_01.png"
 free: "true"
 ---

@@ -11,7 +11,7 @@ tickets: "http://www.cfir.dk/Arrangementer/andrecfirarrangementer/itsikkerhedsmo
 intro: "For Danish speakers interested in supply chains, IT-security"
 description: "This morning meeting on information security will equip companies to protect their supply chain. Learn how to secure there are no ”backdoors” into the tech you are buying externally; how to avoid security breaches in software updates and much more. Event in Danish."
 type: "Morning meeting"
-image: "img/supplychain.jpg"
+image: "/img/supplychain.jpg"
 free: "true"
 ---
 <!-- fill in the URL of your event host page if you haven't enough information for a detail page, so the event link won't point on the detail page at all -->
