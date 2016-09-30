@@ -26,6 +26,7 @@ module.exports = function (grunt) {
               'svg',
               'css',
               'png',
+              'jpg',
               'woff',
               'woff2',
               'tff',
